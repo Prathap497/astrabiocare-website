@@ -137,6 +137,44 @@ nav .nav-list a:hover {
   margin-top: 3rem;
 }
 
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+.share-btn {
+  margin-left: 1rem;
+  background-color: var(--btn-secondary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.share-btn:hover {
+  background-color: var(--accent-color);
+}
+
+.social-feed {
+  margin: 2rem 0;
+  text-align: center;
+}
+
 /* Newsletter modal styles */
 .modal {
   display: none;
