@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astra Bio Care Footer Demo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f2f2f2;
+    }
+    .astra-footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .astra-footer .logo {
+      font-style: italic;
+      font-weight: 700;
+      font-size: 2rem;
+      position: relative;
+    }
+    .astra-footer .logo::after {
+      content: '\2192';
+      margin-left: 0.5rem;
+      font-weight: 400;
+    }
+    .astra-footer .subtitle {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.2rem;
+      color: #eee;
+    }
+    .astra-footer .contact-btn {
+      background: #0052cc;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .astra-footer .contact-btn:hover {
+      background: #003e99;
+    }
+    .astra-footer .social-links {
+      list-style: none;
+      display: flex;
+      gap: 0.75rem;
+      padding: 0;
+      margin: 0;
+    }
+    .astra-footer .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      font-size: 1.25rem;
+    }
+    .astra-footer .social-links a:hover {
+      background: #e0e0e0;
+    }
+    @media (max-width: 600px) {
+      .astra-footer {
+        padding: 2rem 1rem;
+      }
+      .astra-footer .logo {
+        font-size: 1.5rem;
+      }
+      .astra-footer .contact-btn {
+        padding: 0.6rem 1.5rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+1JxS8EU1RcUnnqgKTTDYXYBvCZUc5JSpSXZLF645xvLZHbiRL+CRceZ9UnB9Z9GjK6xwHy3v4sHtQ+Dx2Y/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <footer class="astra-footer">
+    <div class="logo">Astra Bio Care</div>
+    <div class="subtitle">Caring for Every Beginning</div>
+    <button class="contact-btn">GET IN TOUCH</button>
+    <ul class="social-links">
+      <li><a href="https://www.facebook.com/astrabiocare" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a></li>
+      <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
