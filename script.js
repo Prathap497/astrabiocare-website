@@ -42,6 +42,30 @@ window.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("newsletter_shown", "yes");
     });
   }
+
+  // Share button logic
+  document.querySelectorAll(".share-btn").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      const shareData = {
+        title: document.title,
+        url: window.location.href,
+      };
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          console.error("Share failed", err);
+        }
+      } else if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(shareData.url);
+          alert("Link copied to clipboard");
+        } catch (err) {
+          alert("Unable to copy link");
+        }
+      }
+    });
+  });
 });
 
 // Header behavior on scroll

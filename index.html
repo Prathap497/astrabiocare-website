@@ -6,27 +6,28 @@
   <meta name="description" content="Astra Biocare Pvt Ltd - Innovative Pharma Solutions" />
   <title>Astra Biocare Pvt Ltd</title>
   <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+1JxS8EU1RcUnnqgKTTDYXYBvCZUc5JSpSXZLF645xvLZHbiRL+CRceZ9UnB9Z9GjK6xwHy3v4sHtQ+Dx2Y/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script defer src="script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <!-- <script>AOS.init();</script> -->
 </head>
 <body>
   <header class="site-header" data-aos="fade-down">
     <div class="container header-container">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img src="img/company_logo.png" alt="Astra Biocare Logo" />
         <h1>Astra Biocare</h1>
-      </div>
+      </a>
       <nav>
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="products/products.html">Products</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button id="themeBtn" title="Toggle dark mode">🌓</button>
+      <button id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
     </div>
   </header>
 
@@ -37,7 +38,7 @@
         <p>
           Astra Biocare is committed to delivering innovative and high-quality pharmaceutical products to enhance global well-being.
         </p>
-        <a href="products.html" class="btn-primary">Explore Products</a>
+        <a href="products/products.html" class="btn-primary">Explore Products</a>
       </div>
       <div class="hero-img">
         <img src="img/hero_medicines.jpg" alt="Pharmaceutical Products" />
@@ -48,19 +49,19 @@
       <h2>Featured Products</h2>
       <div class="product-grid">
         <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-          <img src="img/foljoy.jpeg" alt="FOLJOY - Next Gen Folate" />
+          <img src="img/foljoy.JPG" alt="FOLJOY - Next Gen Folate" />
           <h3>FOLJOY</h3>
         </div>
         <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-          <img src="img/clean-v7.jpeg" alt="CLEAN-V7" />
+          <img src="img/clean-v7.JPG" alt="CLEAN-V7" />
           <h3>CLEAN-V7</h3>
         </div>
         <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-          <img src="img/snoril-lx.jpeg" alt="SNORIL-LX" />
+          <img src="img/snoril-lx.JPG" alt="SNORIL-LX" />
           <h3>SNORIL-LX</h3>
         </div>
       </div>
-      <a href="products.html" class="btn-secondary">View All Products</a>
+      <a href="products/products.html" class="btn-secondary">View All Products</a>
     </section>
 
     <section class="about-preview" data-aos="fade-right">
@@ -75,6 +76,14 @@
       <h2>Get In Touch</h2>
       <p>Have questions or want to collaborate with us? We’re just a message away.</p>
       <a href="contact.html" class="btn-primary">Contact Us</a>
+    </section>
+
+    <section class="social-feed" data-aos="fade-up">
+      <div class="fb-page" data-href="https://www.facebook.com/astrabiocare/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/astrabiocare/" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/astrabiocare/">Astra Biocare</a>
+        </blockquote>
+      </div>
     </section>
   </main>
 
@@ -96,6 +105,12 @@
       <address>
         Registered Office: #16, 2nd cross, Aruna Building, Somasundrapalya, Bangalore, Karnataka - 560102.
       </address>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/astrabiocare/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
     </div>
   </footer>
   <script>
@@ -105,5 +120,6 @@
       }
     });
   </script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
 </body>
 </html>
