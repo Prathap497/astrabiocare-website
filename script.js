@@ -44,8 +44,19 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Header shadow on scroll
+// Header behavior on scroll
+let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   const header = document.querySelector(".site-header");
-  header.style.boxShadow = window.scrollY > 50 ? "0 2px 6px rgba(0,0,0,0.3)" : "none";
+  const currentScrollY = window.scrollY;
+
+  header.classList.toggle("shrink", currentScrollY > 50);
+
+  if (currentScrollY > lastScrollY && currentScrollY > 50) {
+    header.classList.add("hidden");
+  } else {
+    header.classList.remove("hidden");
+  }
+
+  lastScrollY = currentScrollY;
 });
