@@ -1,0 +1,11 @@
+{
+  "name": "Astra Bio Care",
+  "short_name": "Astra Bio Care",
+  "theme_color": "#1B5E9A",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "icons": [
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/favicon-48.png", "sizes": "48x48", "type": "image/png" }
+  ]
+}
