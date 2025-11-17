@@ -66,6 +66,38 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Smooth scroll for product pills
+  const pills = document.querySelectorAll('[data-scroll-to]');
+  const sections = Array.from(pills).map((pill) => document.querySelector(pill.dataset.scrollTo)).filter(Boolean);
+
+  pills.forEach((pill) => {
+    pill.addEventListener('click', (event) => {
+      event.preventDefault();
+      const target = document.querySelector(pill.dataset.scrollTo);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      pills.forEach((p) => p.classList.remove('active'));
+      pill.classList.add('active');
+    });
+  });
+
+  if ('IntersectionObserver' in window && sections.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const activePill = document.querySelector(`[data-scroll-to="#${entry.target.id}"]`);
+          if (activePill) {
+            pills.forEach((p) => p.classList.remove('active'));
+            activePill.classList.add('active');
+          }
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach((section) => observer.observe(section));
+  }
 });
 
 // Header behavior on scroll

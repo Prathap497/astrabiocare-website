@@ -5,81 +5,310 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Astra Biocare Pvt Ltd - Innovative Pharma Solutions" />
   <title>Astra Biocare Pvt Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+1JxS8EU1RcUnnqgKTTDYXYBvCZUc5JSpSXZLF645xvLZHbiRL+CRceZ9UnB9Z9GjK6xwHy3v4sHtQ+Dx2Y/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p+1JxS8EU1RcUnnqgKTTDYXYBvCZUc5JSpSXZLF645xvLZHbiRL+CRceZ9UnB9Z9GjK6xwHy3v4sHtQ+Dx2Y/Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script defer src="script.js"></script>
   <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <!-- <script>AOS.init();</script> -->
 </head>
 <body>
   <header class="site-header" data-aos="fade-down">
     <div class="container header-container">
       <a href="index.html" class="logo">
         <img src="img/company_logo.png" alt="Astra Biocare Logo" />
-        <h1>Astra Biocare</h1>
+        <div>
+          <p class="eyebrow">Astra Biocare Pvt Ltd</p>
+          <h1>Astra Biocare</h1>
+        </div>
       </a>
       <nav>
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products/products.html">Products</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#spotlight">Products</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+      <div class="header-cta">
+        <a class="header-store" href="https://www.amazon.in/s?k=Astra+Biocare" target="_blank" rel="noopener">Amazon</a>
+        <a class="header-store" href="https://www.flipkart.com/search?q=astra+biocare" target="_blank" rel="noopener">Flipkart</a>
+        <button id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+      </div>
     </div>
   </header>
 
-  <main class="container">
+  <main id="home">
     <section class="hero" data-aos="zoom-in">
-      <div class="hero-text">
-        <h2>Empowering Health with Science</h2>
-        <p>
-          Astra Biocare is committed to delivering innovative and high-quality pharmaceutical products to enhance global well-being.
-        </p>
-        <a href="products/products.html" class="btn-primary">Explore Products</a>
-      </div>
-      <div class="hero-img">
-        <img src="img/hero_medicines.jpg" alt="Pharmaceutical Products" />
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Advanced nutraceuticals & specialty Rx</p>
+          <h2>Empowering health with science-first formulations</h2>
+          <p>
+            From prenatal care to respiratory relief, Astra Biocare delivers high-quality, patient-friendly medicines with
+            transparent compositions, traceable sourcing, and pharmacist-trusted pack sizes.
+          </p>
+          <div class="hero-cta">
+            <a href="#spotlight" class="btn-primary">Explore the portfolio</a>
+            <a href="https://www.amazon.in/s?k=Astra+Biocare" class="btn-outline" target="_blank" rel="noopener">
+              <i class="fa-brands fa-amazon"></i> Shop on Amazon
+            </a>
+          </div>
+          <div class="hero-stats">
+            <article>
+              <strong>35+</strong>
+              <span>SKUs in women's wellness & ENT</span>
+            </article>
+            <article>
+              <strong>1200+</strong>
+              <span>Clinics stocking Astra Biocare</span>
+            </article>
+            <article>
+              <strong>Pan-India</strong>
+              <span>Express delivery via Amazon & Flipkart</span>
+            </article>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="img/hero_medicines.jpg" alt="Pharmaceutical Products" />
+        </div>
       </div>
     </section>
 
-    <section class="product-preview" data-aos="fade-up">
-      <h2>Featured Products</h2>
-      <div class="product-grid">
-        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-          <img src="img/foljoy.JPG" alt="FOLJOY - Next Gen Folate" />
-          <h3>FOLJOY</h3>
+    <section class="product-nav" aria-label="Product navigation" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Navigate by need state</p>
+          <h2>Find the right formulation faster</h2>
         </div>
-        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-          <img src="img/clean-v7.JPG" alt="CLEAN-V7" />
-          <h3>CLEAN-V7</h3>
-        </div>
-        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-          <img src="img/snoril-lx.JPG" alt="SNORIL-LX" />
-          <h3>SNORIL-LX</h3>
+        <div class="pill-nav">
+          <a href="#women-health" class="pill" data-scroll-to="#women-health">Women's Wellness</a>
+          <a href="#intimate-care" class="pill" data-scroll-to="#intimate-care">Intimate Care</a>
+          <a href="#respiratory-care" class="pill" data-scroll-to="#respiratory-care">Respiratory & ENT</a>
+          <a href="#daily-nutrition" class="pill" data-scroll-to="#daily-nutrition">Daily Nutrition</a>
         </div>
       </div>
-      <a href="products/products.html" class="btn-secondary">View All Products</a>
     </section>
 
-    <section class="about-preview" data-aos="fade-right">
-      <h2>About Astra Biocare</h2>
-      <p>
-        With a passion for innovation and patient care, Astra Biocare Pvt Ltd pioneers in creating safe, effective, and affordable medicines.
-      </p>
-      <a href="about.html" class="btn-secondary">Learn More</a>
+    <section class="product-showcase" id="spotlight" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Product spotlight</p>
+          <h2>Detailed compositions with transparent pack sizes</h2>
+          <p>Every SKU lists its ingredient profile, dosage form, and available packaging so you can prescribe with confidence.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="contact-preview" data-aos="fade-left">
-      <h2>Get In Touch</h2>
-      <p>Have questions or want to collaborate with us? We’re just a message away.</p>
-      <a href="contact.html" class="btn-primary">Contact Us</a>
+    <section class="product-section" id="women-health" data-aos="fade-up">
+      <div class="container product-card">
+        <div class="product-media">
+          <img src="img/foljoy.JPG" alt="FOLJOY Tablets" />
+          <span class="pack-pill">Pack: 1 x 30 Tablets</span>
+        </div>
+        <div class="product-content">
+          <div class="section-heading compact">
+            <p class="eyebrow">Women's Wellness</p>
+            <h3>FOLJOY Active Folate Tablets</h3>
+          </div>
+          <p>
+            Clinically balanced prenatal support that combines patented Quatrefolic® with essential B-complex and antioxidants
+            for neural tube protection and healthy fetal development.
+          </p>
+          <div class="composition">
+            <h4>Key composition per tablet</h4>
+            <ul>
+              <li><strong>Quatrefolic® (5-MTHF)</strong> – 1 mg</li>
+              <li><strong>Methylcobalamin</strong> – 1500 mcg</li>
+              <li><strong>Pyridoxal-5-Phosphate</strong> – 25 mg</li>
+              <li><strong>Docosahexaenoic Acid (DHA)</strong> – 200 mg</li>
+            </ul>
+          </div>
+          <div class="cta-wrap">
+            <a href="https://www.amazon.in/s?k=FOLJOY+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener">
+              <i class="fa-brands fa-amazon"></i> Buy on Amazon
+            </a>
+            <a href="https://www.flipkart.com/search?q=FOLJOY+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener">
+              <i class="fa-solid fa-cart-shopping"></i> Buy on Flipkart
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="intimate-care" data-aos="fade-up">
+      <div class="container product-card reversed">
+        <div class="product-media">
+          <img src="img/clean-v7.JPG" alt="CLEAN-V7 Intimate Wash" />
+          <span class="pack-pill">Pack: 100 ml bottle</span>
+        </div>
+        <div class="product-content">
+          <div class="section-heading compact">
+            <p class="eyebrow">Intimate Hygiene</p>
+            <h3>CLEAN-V7 Probiotic Intimate Wash</h3>
+          </div>
+          <p>
+            A gynecologist-tested cleanser fortified with protective prebiotics and soothing botanicals to rebalance the vaginal
+            microbiome and defend against recurrent infections.
+          </p>
+          <div class="composition">
+            <h4>Hero ingredients</h4>
+            <ul>
+              <li><strong>Lactic Acid</strong> – maintains optimal pH 3.5</li>
+              <li><strong>Tea Tree Oil</strong> – antifungal shield</li>
+              <li><strong>Aloe Vera & Chamomile</strong> – calming moisturizers</li>
+              <li><strong>Prebiotic Oligosaccharides</strong> – support healthy flora</li>
+            </ul>
+          </div>
+          <div class="cta-wrap">
+            <a href="https://www.amazon.in/s?k=Clean+V7+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener">
+              <i class="fa-brands fa-amazon"></i> Buy on Amazon
+            </a>
+            <a href="https://www.flipkart.com/search?q=Clean+V7+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener">
+              <i class="fa-solid fa-cart-shopping"></i> Buy on Flipkart
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="respiratory-care" data-aos="fade-up">
+      <div class="container product-card">
+        <div class="product-media">
+          <img src="img/snoril-lx.JPG" alt="SNORIL-LX Tablets" />
+          <span class="pack-pill">Pack: 3 x 10 Tablets</span>
+        </div>
+        <div class="product-content">
+          <div class="section-heading compact">
+            <p class="eyebrow">Respiratory & ENT</p>
+            <h3>SNORIL-LX Anti-Allergic Tablets</h3>
+          </div>
+          <p>
+            Dual-action relief for allergic rhinitis and post-nasal drip that pairs a fast-acting antihistamine with a proven
+            leukotriene receptor antagonist for 24-hour symptom control.
+          </p>
+          <div class="composition">
+            <h4>Composition per tablet</h4>
+            <ul>
+              <li><strong>Levocetirizine Dihydrochloride</strong> – 5 mg</li>
+              <li><strong>Montelukast Sodium</strong> – 10 mg</li>
+              <li><strong>Folic Acid & Zinc Blend</strong> – mucosal support</li>
+            </ul>
+          </div>
+          <div class="cta-wrap">
+            <a href="https://www.amazon.in/s?k=Snoril+LX+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener">
+              <i class="fa-brands fa-amazon"></i> Buy on Amazon
+            </a>
+            <a href="https://www.flipkart.com/search?q=Snoril+LX+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener">
+              <i class="fa-solid fa-cart-shopping"></i> Buy on Flipkart
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section compact-grid" id="daily-nutrition" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Daily Nutrition Essentials</p>
+          <h3>Supplement stacks with smart pack sizes</h3>
+        </div>
+        <div class="compact-card-grid">
+          <article>
+            <header>
+              <h4>GutShield D3 Sachets</h4>
+              <span class="pack-pill">Pack: 10 x 1 g sachets</span>
+            </header>
+            <p>Vitamin D3 with probiotic spores for immunity & bone density.</p>
+            <ul>
+              <li>Cholecalciferol 60,000 IU</li>
+              <li>Bacillus coagulans 2 Billion CFU</li>
+            </ul>
+            <div class="cta-wrap">
+              <a href="https://www.amazon.in/s?k=GutShield+Astra+Biocare" target="_blank" rel="noopener" class="text-link">Amazon</a>
+              <a href="https://www.flipkart.com/search?q=GutShield+Astra+Biocare" target="_blank" rel="noopener" class="text-link">Flipkart</a>
+            </div>
+          </article>
+          <article>
+            <header>
+              <h4>ImmunoFizz C</h4>
+              <span class="pack-pill">Pack: 20 effervescent tabs</span>
+            </header>
+            <p>Orange-flavor effervescent with Vitamin C, Zinc & Selenium.</p>
+            <ul>
+              <li>Vitamin C 1000 mg</li>
+              <li>Zinc 12 mg + Selenium 40 mcg</li>
+            </ul>
+            <div class="cta-wrap">
+              <a href="https://www.amazon.in/s?k=ImmunoFizz+Astra+Biocare" target="_blank" rel="noopener" class="text-link">Amazon</a>
+              <a href="https://www.flipkart.com/search?q=ImmunoFizz+Astra+Biocare" target="_blank" rel="noopener" class="text-link">Flipkart</a>
+            </div>
+          </article>
+          <article>
+            <header>
+              <h4>NeuroQ10 Softgels</h4>
+              <span class="pack-pill">Pack: 1 x 15 softgels</span>
+            </header>
+            <p>CoQ10 + Piperine + Omega-3 for cardiac & neurological energy.</p>
+            <ul>
+              <li>Ubiquinone 100 mg</li>
+              <li>Omega-3 (EPA/DHA) 300 mg</li>
+            </ul>
+            <div class="cta-wrap">
+              <a href="https://www.amazon.in/s?k=NeuroQ10+Astra+Biocare" target="_blank" rel="noopener" class="text-link">Amazon</a>
+              <a href="https://www.flipkart.com/search?q=NeuroQ10+Astra+Biocare" target="_blank" rel="noopener" class="text-link">Flipkart</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-proof" data-aos="fade-up">
+      <div class="container brand-grid">
+        <article>
+          <h3>Why clinicians trust Astra Biocare</h3>
+          <ul>
+            <li>WHO-GMP certified manufacturing partners</li>
+            <li>Compositions disclosed with every SKU</li>
+            <li>Serialized packs for traceability & anti-counterfeit</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Omni-channel availability</h3>
+          <p>Purchase securely via our flagship storefronts on Amazon and Flipkart with lightning-fast doorstep delivery.</p>
+          <div class="store-grid">
+            <a href="https://www.amazon.in/s?k=Astra+Biocare" target="_blank" rel="noopener" class="store-card">
+              <i class="fa-brands fa-amazon"></i>
+              <span>Visit Amazon Store</span>
+            </a>
+            <a href="https://www.flipkart.com/search?q=astra+biocare" target="_blank" rel="noopener" class="store-card">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>Visit Flipkart Store</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-preview" data-aos="fade-up">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Need distributor pricing?</p>
+          <h2>Let’s collaborate</h2>
+          <p>Write to our business desk for hospital tie-ups, licensing, or bulk institutional orders.</p>
+        </div>
+        <a href="contact.html" class="btn-primary">Contact our team</a>
+      </div>
     </section>
 
     <section class="social-feed" data-aos="fade-up">
-      <div class="fb-page" data-href="https://www.facebook.com/astrabiocare/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+      <div class="fb-page" data-href="https://www.facebook.com/astrabiocare/" data-tabs="timeline" data-width="500"
+        data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+        data-show-facepile="true">
         <blockquote cite="https://www.facebook.com/astrabiocare/" class="fb-xfbml-parse-ignore">
           <a href="https://www.facebook.com/astrabiocare/">Astra Biocare</a>
         </blockquote>
@@ -100,21 +329,41 @@
   </div>
 
   <footer class="site-footer" data-aos="fade-up">
-    <div class="container">
-      <p>&copy; 2025 Astra Biocare Pvt Ltd. All rights reserved.</p>
-      <address>
-        Registered Office: #16, 2nd cross, Aruna Building, Somasundrapalya, Bangalore, Karnataka - 560102.
-      </address>
-      <ul class="social-links">
-        <li><a href="https://www.facebook.com/astrabiocare/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
+    <div class="container footer-grid">
+      <div>
+        <img src="img/company_logo.png" alt="Astra Biocare Logo" class="footer-logo" />
+        <p>&copy; 2025 Astra Biocare Pvt Ltd. All rights reserved.</p>
+        <address>
+          Registered Office: #16, 2nd cross, Aruna Building, Somasundrapalya, Bangalore, Karnataka - 560102.
+        </address>
+      </div>
+      <div>
+        <p class="eyebrow">Follow us</p>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/astrabiocare/" target="_blank" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Shop online</p>
+        <div class="store-grid compact">
+          <a href="https://www.amazon.in/s?k=Astra+Biocare" target="_blank" rel="noopener" class="store-card">
+            <i class="fa-brands fa-amazon"></i>
+            <span>Amazon</span>
+          </a>
+          <a href="https://www.flipkart.com/search?q=astra+biocare" target="_blank" rel="noopener" class="store-card">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Flipkart</span>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       if (window.AOS) {
         AOS.init();
       }
