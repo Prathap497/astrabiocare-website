@@ -4,9 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Astra Biocare Pvt Ltd - Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p+1JxS8EU1RcUnnqgKTTDYXYBvCZUc5JSpSXZLF645xvLZHbiRL+CRceZ9UnB9Z9GjK6xwHy3v4sHtQ+Dx2Y/Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <script defer src="../script.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+1JxS8EU1RcUnnqgKTTDYXYBvCZUc5JSpSXZLF645xvLZHbiRL+CRceZ9UnB9Z9GjK6xwHy3v4sHtQ+Dx2Y/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -27,47 +34,581 @@
     </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2>Our Products</h2>
-      <div class="product-grid">
-        <a class="product-card" href="supergest.html"><img src="../img/supergest-sr.jpg" alt="SUPERGEST-SR"><h3>SUPERGEST-SR</h3></a>
-        <a class="product-card" href="super-hb.html"><img src="../img/super-hb.JPG" alt="SUPER-HB"><h3>SUPER-HB</h3></a>
-        <a class="product-card" href="foljoy.html"><img src="../img/foljoy.JPG" alt="FOLJOY"><h3>FOLJOY</h3></a>
-        <a class="product-card" href="clean-v7.html"><img src="../img/clean-v7.JPG" alt="CLEAN-V7"><h3>CLEAN-V7</h3></a>
-        <a class="product-card" href="clean-v3.html"><img src="../img/clean-v3.JPG" alt="CLEAN-V3"><h3>CLEAN-V3</h3></a>
-        <a class="product-card" href="cycle-21.html"><img src="../img/cycle-21.JPG" alt="CYCLE-21"><h3>CYCLE-21</h3></a>
-        <a class="product-card" href="cystopil.html"><img src="../img/cystopil.JPG" alt="CYSTOPIL"><h3>CYSTOPIL</h3></a>
-        <a class="product-card" href="esokare-d.html"><img src="../img/esocare-d.JPG" alt="ESOKARE-D"><h3>ESOKARE-D</h3></a>
-        <a class="product-card" href="z-on.html"><img src="../img/z-on.jpeg" alt="Z-ON"><h3>Z-ON</h3></a>
-        <a class="product-card" href="snoril-lx.html"><img src="../img/snoril-lx.JPG" alt="SNORIL-LX"><h3>SNORIL-LX</h3></a>
-        <a class="product-card" href="snoril-d.html"><img src="../img/snoril-d.jpeg" alt="SNORIL-D"><h3>SNORIL-D</h3></a>
-        <a class="product-card" href="snoril-d.html"><img src="../img/snoril-cold.JPG" alt="SNORIL-COLD"><h3>SNORIL-COLD</h3></a>
-        <a class="product-card" href="vitotop.html"><img src="../img/vitotop.JPG" alt="VITOTOP"><h3>VITOTOP</h3></a>
-        <a class="product-card" href="d3-nine.html"><img src="../img/d3-nine+.JPG" alt="D3-NINE+"><h3>D3-NINE+</h3></a>
-        <a class="product-card" href="d3-nine.html"><img src="../img/d3-nine.JPG" alt="D3-NINE"><h3>D3-NINE</h3></a>
-        <a class="product-card" href="astraclav.html"><img src="../img/astraclav.jpeg" alt="ASTRACLAV"><h3>ASTRACLAV</h3></a>
-        <a class="product-card" href="rightcef.html"><img src="../img/rightcef.jpeg" alt="RIGHTCEF"><h3>RIGHTCEF</h3></a>
-        <a class="product-card" href="setmol-mds.html"><img src="../img/setmol-mds.jpeg" alt="SETMOL-MDS"><h3>SETMOL-MDS</h3></a>
-        <a class="product-card" href="megamont-l.html"><img src="../img/megamont-l.jpeg" alt="MEGAMONT-L"><h3>MEGAMONT-L</h3></a>
+  <main id="products-page">
+    <section class="hero hero-text-only" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Product portfolio</p>
+          <h2>Therapeutic solutions with transparent compositions</h2>
+          <p>
+            Astra Biocare brings together WHO-GMP backed manufacturing, serialized packaging, and ingredient disclosure for
+            every SKU. Browse the catalogue by therapeutic segment, review highlights, and jump directly to our e-commerce
+            partners or request distributor pricing.
+          </p>
+        </div>
+        <div class="hero-cta">
+          <a href="#women-wellness" class="btn-primary" data-scroll-to="#women-wellness">Explore segments</a>
+          <a href="../contact.html" class="btn-outline">Talk to our team</a>
+        </div>
+        <div class="hero-stats">
+          <article>
+            <strong>35+</strong>
+            <span>Specialised SKUs</span>
+          </article>
+          <article>
+            <strong>1200+</strong>
+            <span>Clinics & pharmacies supplied</span>
+          </article>
+          <article>
+            <strong>Pan-India</strong>
+            <span>Amazon & Flipkart fulfilment</span>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="product-nav" aria-label="Product navigation" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Navigate by therapeutic need</p>
+          <h2>Click a segment to jump to detailed cards</h2>
+        </div>
+        <div class="pill-nav">
+          <a href="#women-wellness" class="pill" data-scroll-to="#women-wellness">Women's Wellness</a>
+          <a href="#intimate-care" class="pill" data-scroll-to="#intimate-care">Intimate Hygiene</a>
+          <a href="#respiratory-ent" class="pill" data-scroll-to="#respiratory-ent">Respiratory & ENT</a>
+          <a href="#gastro-metabolism" class="pill" data-scroll-to="#gastro-metabolism">Gastro & Metabolic</a>
+          <a href="#nutrition-immunity" class="pill" data-scroll-to="#nutrition-immunity">Nutrition & Immunity</a>
+          <a href="#anti-infective" class="pill" data-scroll-to="#anti-infective">Anti-Infective & Acute Care</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="women-wellness" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Women's wellness & prenatal care</p>
+          <h2>Formulations designed with gynaecologists for compliance & safety</h2>
+        </div>
+        <div class="brand-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/foljoy.JPG" alt="FOLJOY Tablets" />
+              <span class="pack-pill">Pack: 10 x 1 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>FOLJOY Active Folate Tablets</h3>
+                <p class="muted">Prenatal neural tube protection</p>
+              </div>
+              <ul>
+                <li>Quatrefolic® 5-MTHF + methylcobalamin + P5P for instant bioavailability</li>
+                <li>DHA 200 mg supports fetal CNS development & maternal cognition</li>
+                <li>Orange-flavoured tablet with no metallic aftertaste</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=FOLJOY+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=FOLJOY+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/cycle-21.JPG" alt="CYCLE-21 Tablets" />
+              <span class="pack-pill">Pack: 1 x 21 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>CYCLE-21 Hormonal Balance Tablets</h3>
+                <p class="muted">Cycle regulation & contraception</p>
+              </div>
+              <ul>
+                <li>Low-dose ethinylestradiol + levonorgestrel monophasic profile</li>
+                <li>Helps manage acne, dysmenorrhea, and PCOS-related irregularities</li>
+                <li>Patient education leaflet simplifies counselling</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=CYCLE+21+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=CYCLE+21+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/super-hb.JPG" alt="SUPER-HB Capsules" />
+              <span class="pack-pill">Pack: 3 x 10 Capsules</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>SUPER-HB Gentle Iron Capsules</h3>
+                <p class="muted">High bioavailability hematinic support</p>
+              </div>
+              <ul>
+                <li>Ferrous ascorbate for optimal absorption without constipation</li>
+                <li>Methylcobalamin, folic acid, zinc, and Vitamin C boost RBC synthesis</li>
+                <li>Once-daily capsule, gastro-friendly excipients</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=SUPER+HB+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=SUPER+HB+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="intimate-care" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Intimate hygiene</p>
+          <h2>Microbiome-friendly cleansers for daily and therapeutic use</h2>
+        </div>
+        <div class="brand-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/clean-v7.JPG" alt="CLEAN-V7 Intimate Wash" />
+              <span class="pack-pill">Pack: 100 ml bottle</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>CLEAN-V7 Probiotic Intimate Wash</h3>
+                <p class="muted">Restorative cleanse for recurrent infections</p>
+              </div>
+              <ul>
+                <li>Lactic acid maintains pH 3.5; prebiotic oligosaccharides encourage healthy flora</li>
+                <li>Tea tree oil + chamomile soothe itching and offer antimicrobial cover</li>
+                <li>Dermatologist & gynecologist tested</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=Clean+V7+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=Clean+V7+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/clean-v3.JPG" alt="CLEAN-V3 Foam" />
+              <span class="pack-pill">Pack: 100 ml foaming bottle</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>CLEAN-V3 Daily Foam Wash</h3>
+                <p class="muted">Everyday odour control for teens & athletes</p>
+              </div>
+              <ul>
+                <li>Soap-free surfactant base with witch hazel and calendula</li>
+                <li>Maintains pH 3.5 without stripping natural oils</li>
+                <li>Foaming pump ensures economical dosing</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=Clean+V3+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=Clean+V3+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/supergest-sr.jpg" alt="SUPERGEST-SR Tablets" />
+              <span class="pack-pill">Pack: 3 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>SUPERGEST-SR Digestive Enzyme</h3>
+                <p class="muted">Supports gut health alongside intimate therapies</p>
+              </div>
+              <ul>
+                <li>Sustained-release multi-enzyme pellets for 12-hour coverage</li>
+                <li>Simethicone + carminatives relieve bloating during antibiotic courses</li>
+                <li>Vitamin support offsets malabsorption and fatigue</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=SUPERGEST+SR+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=SUPERGEST+SR+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="respiratory-ent" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Respiratory & ENT</p>
+          <h2>Day & night relief for allergic, infectious, and paediatric cases</h2>
+        </div>
+        <div class="brand-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/snoril-lx.JPG" alt="SNORIL-LX Tablets" />
+              <span class="pack-pill">Pack: 3 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>SNORIL-LX Anti-Allergic Tablets</h3>
+                <p class="muted">Dual blockade for allergic rhinitis</p>
+              </div>
+              <ul>
+                <li>Levocetirizine + Montelukast for 24-hour symptom suppression</li>
+                <li>Supports mucosal healing with folic acid & zinc blend</li>
+                <li>Non-drowsy daytime control</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=Snoril+LX+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=Snoril+LX+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/snoril-d.jpeg" alt="SNORIL-D Tablets" />
+              <span class="pack-pill">Pack: 3 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>SNORIL-D Sinus Relief</h3>
+                <p class="muted">Decongestant + analgesic combo</p>
+              </div>
+              <ul>
+                <li>Phenylephrine, chlorpheniramine, paracetamol, and caffeine synergy</li>
+                <li>Targets sinus pressure, headache, and cold symptoms simultaneously</li>
+                <li>Ideal for acute ENT prescriptions</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=Snoril+D+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=Snoril+D+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/snoril-cold.JPG" alt="SNORIL-COLD Syrup" />
+              <span class="pack-pill">Pack: 60 ml bottle</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>SNORIL-COLD Pediatric Syrup</h3>
+                <p class="muted">Kid-friendly cold & cough relief</p>
+              </div>
+              <ul>
+                <li>Dextromethorphan + chlorpheniramine + menthol base for soothing action</li>
+                <li>Alcohol-free formula with calibrated dosing cup</li>
+                <li>Addresses fever, runny nose, and dry cough without sedation</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=Snoril+Cold+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=Snoril+Cold+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="gastro-metabolism" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Gastroenterology & metabolic care</p>
+          <h2>Extended relief for GERD, insulin resistance, and nutrient deficits</h2>
+        </div>
+        <div class="brand-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/esokare-d.jpeg" alt="ESOKARE-D Capsules" />
+              <span class="pack-pill">Pack: 3 x 10 Capsules</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>ESOKARE-D Gastro-Resistant Capsules</h3>
+                <p class="muted">Dual-action GERD therapy</p>
+              </div>
+              <ul>
+                <li>Esomeprazole 40 mg with Domperidone SR 30 mg</li>
+                <li>Enteric-coated pellets protect actives from gastric degradation</li>
+                <li>Once-daily compliance for chronic acidity</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=ESOKARE+D+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=ESOKARE+D+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/d3-nine+.JPG" alt="D3-NINE+ Sachets" />
+              <span class="pack-pill">Pack: 1 x 4 Sachets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>D3-NINE+ Cholecalciferol Sachets</h3>
+                <p class="muted">Bone density & calcium mobilisation</p>
+              </div>
+              <ul>
+                <li>Vitamin D3 60,000 IU with MK-7 and prebiotic FOS base</li>
+                <li>Orange flavour improves adherence to weekly supplementation</li>
+                <li>Supports fracture recovery and osteoporosis protocols</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=D3+NINE+Plus+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=D3+NINE+Plus+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/d3-nine.JPG" alt="D3-NINE Softgels" />
+              <span class="pack-pill">Pack: 1 x 15 Softgels</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>D3-NINE Weekly Softgels</h3>
+                <p class="muted">Convenient weekly dosing</p>
+              </div>
+              <ul>
+                <li>Vitamin D3 60,000 IU suspended in coconut oil for better absorption</li>
+                <li>MK-7 45 mcg prevents ectopic calcification</li>
+                <li>Pharma-grade gelatin ensures stability and minimal reflux</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=D3+NINE+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=D3+NINE+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="nutrition-immunity" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Daily nutrition & immunity</p>
+          <h2>Broad-spectrum micronutrient and adaptogen support</h2>
+        </div>
+        <div class="brand-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/vitotop.JPG" alt="VITOTOP Tablets" />
+              <span class="pack-pill">Pack: 3 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>VITOTOP Active Multivitamin</h3>
+                <p class="muted">Energy + stress resilience</p>
+              </div>
+              <ul>
+                <li>23 vitamins & minerals, ginseng, and amino acids</li>
+                <li>Chromium and trace minerals support metabolic health</li>
+                <li>Daily tablet combats fatigue for professionals</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=VITOTOP+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=VITOTOP+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/z-on.jpeg" alt="Z-ON Tablets" />
+              <span class="pack-pill">Pack: 3 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>Z-ON Immunity Booster</h3>
+                <p class="muted">Seasonal immune support</p>
+              </div>
+              <ul>
+                <li>Zinc 50 mg + Vitamin C 500 mg + Vitamin D3 1000 IU</li>
+                <li>Herbal adaptogens counter oxidative stress</li>
+                <li>Ideal for prophylactic use during outbreaks</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=Z+ON+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=Z+ON+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/megamont-l.jpeg" alt="MEGAMONT-L Tablets" />
+              <span class="pack-pill">Pack: 1 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>MEGAMONT-L Allergy Control</h3>
+                <p class="muted">Respiratory allergy prophylaxis</p>
+              </div>
+              <ul>
+                <li>Montelukast 10 mg + Levocetirizine 5 mg once-daily dosing</li>
+                <li>Sugar-free coating suitable for diabetic patients</li>
+                <li>Reduces nocturnal sneezing and exercise-induced triggers</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=MEGAMONT+L+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=MEGAMONT+L+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="anti-infective" data-aos="fade-up">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Anti-infective & acute care</p>
+          <h2>Evidence-backed antibiotics and analgesics for OPD & IPD settings</h2>
+        </div>
+        <div class="brand-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/astraclav.jpeg" alt="ASTRACLAV Tablets" />
+              <span class="pack-pill">Pack: 1 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>ASTRACLAV 625 mg</h3>
+                <p class="muted">Trusted amoxicillin + clavulanate</p>
+              </div>
+              <ul>
+                <li>Produced with WHO-GMP partners for potency & purity</li>
+                <li>Film-coated tablets enhance GI tolerance</li>
+                <li>Serialized packs for anti-counterfeit traceability</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=ASTRACLAV+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=ASTRACLAV+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/rightcef.jpeg" alt="RIGHTCEF Tablets" />
+              <span class="pack-pill">Pack: 1 x 10 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>RIGHTCEF-CV 325</h3>
+                <p class="muted">Cefixime + Clavulanate for resistant UTIs</p>
+              </div>
+              <ul>
+                <li>Extended-spectrum cephalosporin with beta-lactamase protection</li>
+                <li>Dispersible base for faster onset</li>
+                <li>Twice-daily convenience improves adherence</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=RIGHTCEF+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=RIGHTCEF+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="../img/setmol-mds.jpeg" alt="SETMOL-MDS Tablets" />
+              <span class="pack-pill">Pack: 1 x 15 Tablets</span>
+            </div>
+            <div class="product-content">
+              <div class="section-heading compact">
+                <h3>SETMOL-MDS Mouth Dissolving</h3>
+                <p class="muted">Rapid pain & fever control</p>
+              </div>
+              <ul>
+                <li>Paracetamol 500 mg in fast-dissolve format—no water needed</li>
+                <li>Orange flavour improves paediatric and geriatric acceptance</li>
+                <li>Unit-dose blisters support safe dispensing</li>
+              </ul>
+              <div class="cta-wrap">
+                <a href="https://www.amazon.in/s?k=SETMOL+MDS+Astra+Biocare" class="btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i> Amazon</a>
+                <a href="https://www.flipkart.com/search?q=SETMOL+MDS+Astra+Biocare" class="btn-secondary" target="_blank" rel="noopener"><i class="fa-solid fa-cart-shopping"></i> Flipkart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-proof" data-aos="fade-up">
+      <div class="container brand-grid">
+        <article>
+          <h3>Why clinicians trust Astra Biocare</h3>
+          <ul>
+            <li>WHO-GMP certified manufacturing partners with validated supply chains</li>
+            <li>100% composition disclosure with pack sizes, batch information, and QR traceability</li>
+            <li>Serialized packaging blocks counterfeits and simplifies pharmacovigilance</li>
+            <li>Dedicated pharmacist success desk for formulary onboarding</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Omni-channel fulfilment</h3>
+          <p>Order directly from our flagship storefronts or through authorised distributors for institutional supply.</p>
+          <div class="store-grid">
+            <a href="https://www.amazon.in/s?k=Astra+Biocare" target="_blank" rel="noopener" class="store-card">
+              <i class="fa-brands fa-amazon"></i>
+              <span>Amazon Store</span>
+            </a>
+            <a href="https://www.flipkart.com/search?q=astra+biocare" target="_blank" rel="noopener" class="store-card">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>Flipkart Store</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-preview" data-aos="fade-up">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Need hospital or chain pharmacy supply?</p>
+          <h2>Let’s plan your next replenishment</h2>
+          <p>Share your monthly volumes, therapeutic focus, and preferred logistics partner. Our business desk will
+            customise pricing, credit terms, and marketing enablement.</p>
+        </div>
+        <a href="../contact.html" class="btn-primary">Contact our team</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Astra Biocare Pvt Ltd. All rights reserved.</p>
-      <address>
-        Registered Office: #16, 2nd cross, Aruna Building, Somasundrapalya, Bangalore, Karnataka - 560102.
-      </address>
-      <ul class="social-links">
-        <li><a href="https://www.facebook.com/astrabiocare/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
+  <footer class="site-footer" data-aos="fade-up">
+    <div class="container footer-grid">
+      <div>
+        <img src="../img/company_logo.png" alt="Astra Biocare Logo" class="footer-logo" />
+        <p>&copy; 2025 Astra Biocare Pvt Ltd. All rights reserved.</p>
+        <address>
+          Registered Office: #16, 2nd cross, Aruna Building, Somasundrapalya, Bangalore, Karnataka - 560102.
+        </address>
+      </div>
+      <div>
+        <p class="eyebrow">Follow us</p>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/astrabiocare/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a></li>
+          <li><a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="#" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Shop online</p>
+        <div class="store-grid compact">
+          <a href="https://www.amazon.in/s?k=Astra+Biocare" target="_blank" rel="noopener" class="store-card">
+            <i class="fa-brands fa-amazon"></i>
+            <span>Amazon</span>
+          </a>
+          <a href="https://www.flipkart.com/search?q=astra+biocare" target="_blank" rel="noopener" class="store-card">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Flipkart</span>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.AOS) {
+        AOS.init();
+      }
+    });
+  </script>
 </body>
 </html>
+
