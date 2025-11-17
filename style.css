@@ -493,17 +493,27 @@ nav .nav-list a:hover {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: #fff;
-  color: #000;
+  background: transparent;
+  color: #fff;
   border-radius: 50%;
   font-size: 1.1rem;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  border: 1px solid rgba(255,255,255,0.12);
 }
 
 .social-links a:hover {
   transform: translateY(-2px);
-  background: #f0f0f0;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+.social-links a img,
+.social-links a .social-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
 }
 
 .store-grid.compact .store-card {
